@@ -1,0 +1,95 @@
+<html>
+<head>
+<script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+<form action="#" name="Form" onsubmit="return(validate());">
+
+<table>
+
+<tr>
+<td colspan=2>
+<center><font size=4><b>Form</b></font></center>
+</td>
+</tr>
+
+<tr>
+<td>Name :</td>
+<td><input type="text" name=textnames id="textname" size="30"></td>
+</tr>
+
+<tr>
+<td>MobileNo :</td>
+<td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+</tr>
+
+<tr>
+<td>Search :</td>
+<td><input type="text" name="search" id="search" size="30"></td>
+</tr>
+
+<tr>
+<td>URL :</td>
+<td><input type="text" name="url" id="url" size="30"></td>
+</tr>
+
+<tr>
+<td>EmailId :</td>
+<td><input type="text" name="emailid" id="emailid" size="30"></td>
+</tr>
+
+<tr>
+<td>Password :</td>
+<td><input type="text" name="password" id="password" size="30"></td>
+</tr>
+
+<tr>
+<td>Gender :</td>
+<td><input type="radio" name="gender" value="male" size="10">Male
+<input type="radio" name="sex" value="Female" size="10">Female</td>
+</tr>
+
+<tr>
+<td>Courses Joined :</td>
+<td><select name="Course">
+<option value="-1" selected>select..</option>
+<option value="JAVA">JAVA</option>
+<option value="PHP">PHP</option>
+</tr>
+
+<tr>
+<td>Start Date & End Date :</td>
+<td><input type="text" name="Start Date & End Date" id="Start Date & End Date" class="calOnward hasDatepicker" onfocus="resetTxt(this, 'Start Date & End Date');">
+<input type="text" name="Start Date & End Date" id="Start Date & End Date" class="calOnward hasDatepicker" onfocus="resetTxt(this, 'Start Date & End Date');"></td>
+</tr>
+
+<tr>
+<td>Upload Doubts :</td>
+<td><form id="uploadForm" method="post" action="upload.php?v2" enctype="multipart/form-data">
+					<div id="drop">
+						<a>Upload <i class="icon icon-upload-2"></i></a>
+						<input type="file" name="image" multiple="">
+					</div></td>
+</tr>
+
+<tr>
+<td>City :</td>
+<td><select name="City">
+<option value="-1" selected>select..</option>
+<option value="Hyderabad">HYDERABAD</option>
+<option value="Vijayawada">VIJAYAWADA</option>
+<option value="Goa">GOA</option>
+<option value="Chennai">CHENNAI</option>
+</select></td>
+</tr> <br>
+
+
+<tr>
+<td><input type="reset"></td>
+<td colspan="2"><input type="submit" value="Submit Form" /></td>
+</tr>
+</table>
+
+</form>
+</body>
+</html>
